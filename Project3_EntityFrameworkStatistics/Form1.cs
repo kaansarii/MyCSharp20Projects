@@ -126,6 +126,8 @@ namespace Project3_EntityFrameworkStatistics
 
 
             //en son eklenen ürünün Kategorisi
+            //önce product tablsounda id kullanıp categoryid bulundu
+            //sonra bulunan id kullanılarak category tablosundan categoryname bulundu
             var endAddProductCategoryId = db.TblProduct.OrderByDescending(x => x.ProductId).Select(y => y.CategoryId).FirstOrDefault();
             var endAddProductCategoryName = db.TblCategory.Where(x => x.CategoryId == endAddProductCategoryId).Select(y => y.CategoryName).FirstOrDefault();
             LblEndAddProductCategory.Text = endAddProductCategoryName.ToString();
@@ -139,6 +141,8 @@ namespace Project3_EntityFrameworkStatistics
 
 
             //toplam kola kazanç tutarı
+            //önce ismi kola olan stok sayısı
+            //sonra ismi kola olan fiyatı
             var totalkola = db.TblProduct.Where(x =>x.ProductName =="Kola").Select(y => y.ProductStock).FirstOrDefault();
             var kolaMale = db.TblProduct.Where(x => x.ProductName == "Kola").Select(y => y.ProductPrice).FirstOrDefault();
             var totalKolaSale = totalkola * kolaMale;
@@ -147,7 +151,8 @@ namespace Project3_EntityFrameworkStatistics
 
 
             //son siparişi veren müşteri adı-soyadı
-            //LblLastOrderCustomerName
+            //önce order tablosundan  order id'den kullanıcı id'sine erişildi
+            //daha sonra customer tablosundan çekilen id sayesinde isme ulaşıldı
             var lastOrderCustomerId = db.TblOrder.OrderByDescending(x => x.OrdeId).Select(y => y.CustomerId).FirstOrDefault();
             var lastOrderCustomer = db.TblCustomer.Where(x => x.CustomerId == lastOrderCustomerId).Select( y => y.CustomerName).FirstOrDefault();
             LblLastOrderCustomerName.Text = lastOrderCustomer.ToString();
