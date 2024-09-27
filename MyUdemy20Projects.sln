@@ -15,11 +15,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5_DapperNorthwind", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project6_ApiWeather", "Project6_ApiWeather\Project6_ApiWeather.csproj", "{46680F88-1B92-45C5-9C7B-9371DBA3EC2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project7_ApiWeatherConsume", "Project7_ApiWeatherConsume\Project7_ApiWeatherConsume.csproj", "{5FD6AFF3-EF09-443D-BEE3-34C0D424FEF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project7_ApiWeatherConsume", "Project7_ApiWeatherConsume\Project7_ApiWeatherConsume.csproj", "{5FD6AFF3-EF09-443D-BEE3-34C0D424FEF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project8_RapidApiCurrency", "Project8_RapidApiCurrency\Project8_RapidApiCurrency.csproj", "{E11E7BF5-3480-40E2-8256-A70D09EA3ECF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project9_MongoDbOrder", "Project9_MongoDbOrder\Project9_MongoDbOrder.csproj", "{5AF35E62-7130-4040-98A9-4982524DF279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project10_PostgreSQLToDolistApp", "Project10_PostgreSQLToDolistApp\Project10_PostgreSQLToDolistApp.csproj", "{348C617A-64BB-49B9-BC49-6541D973F6AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{5AF35E62-7130-4040-98A9-4982524DF279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF35E62-7130-4040-98A9-4982524DF279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF35E62-7130-4040-98A9-4982524DF279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348C617A-64BB-49B9-BC49-6541D973F6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348C617A-64BB-49B9-BC49-6541D973F6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348C617A-64BB-49B9-BC49-6541D973F6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348C617A-64BB-49B9-BC49-6541D973F6AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
