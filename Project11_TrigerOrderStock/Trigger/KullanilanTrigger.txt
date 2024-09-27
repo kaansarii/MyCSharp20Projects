@@ -1,0 +1,45 @@
+﻿CREATE TRIGGER IncreaseProcessCount 
+ON TblOrder
+AFTER INSERT
+AS
+UPDATE TblProcess SET Process +=1
+
+
+
+
+CREATE TRIGGER DecreaseProcessCount
+ON TblOrder
+AFTER DELETE
+AS
+UPDATE TblProcess SET Process-=1
+
+
+SELECT * FROM TblProcess
+
+
+
+
+--------------------------------------------------------------------------
+-- Örneğin 1 nolu üründen 2 tane alınsın, alındıktan sonra ürünler tablosundan  ürünün stoğu iki azalsın
+-- bunun için trigger kullanalım
+
+
+CREATE TRIGGER DecraseProductStockCount
+ON TblOrder
+AFTER INSERT
+AS
+DECLARE @productQuantity int
+DECLARE @productid int
+SELECT @productQuantity =Quantity, @productid=ProductId fROM inserted 
+UPDATE TblProduct SET ProductStock -= @productQuantity WHERE ProductId = @productid 
+--------------------------------------------------------------------------------------------------------
+
+--Bir kullanıcı ürün alınca Kasadaki tutar artacak
+
+CREATE TRIGGER AddTotalPriceToCashRegisterBalance
+ON TblOrder
+AFTER INSERT
+AS
+DECLARE @totalPrice decimal(18,2)
+SELECT @totalPrice = TotalPrice FROM INSERTED
+UPDATE TblCashRegister SET BALANCE+=@totalPrice
