@@ -1,0 +1,43 @@
+﻿--CREATE DATABASE Db14Project20
+
+--USE Db14Project20
+--CREATE TABLE Teams
+--(
+--TeamId INT PRIMARY KEY IDENTITY(1,1),
+--TeamName NVARCHAR(100),
+--TeamCountry NVARCHAR(100)
+--)
+
+--CREATE TABLE TeamDetails
+--(
+--TeamDetailId INT IDENTITY(1,1) PRIMARY KEY,
+--TeamId INT UNIQUE,
+--TeamColor NVARCHAR(100),
+--TeamCity NVARCHAR(50),
+--TeamValue DECIMAL(18,2)
+--FOREIGN KEY (TeamId) REFERENCES Teams(TeamId) 
+--)
+
+--CREATE TABLE Players
+--(
+--	PlayerId INT IDENTITY(1,1) PRIMARY KEY,
+--	PlayerName NVARCHAR(50),
+--	TeamId INT,
+--	FOREIGN KEY (TeamId) REFERENCES Teams(TeamId)
+--)
+
+
+CREATE TABLE Sponsors
+(
+	SponsorId INT IDENTITY(1,1) PRIMARY KEY,
+	SponsorName NVARCHAR(50)
+)
+
+CREATE TABLE TeamSponsors
+(
+	TeamId INT,
+	SponsorId INT,
+	PRIMARY KEY (TeamId, SponsorId),
+	FOREIGN KEY (TeamId) REFERENCES Teams(TeamId),
+	FOREIGN KEY (SponsorId) REFERENCES Sponsors (SponsorId)
+)
