@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project15_GasPriceSimulatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project16_Mail", "Project16_Mail\Project16_Mail.csproj", "{6458EEBB-3BD9-4FF4-99A2-8BCC35AB8314}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project17_KaggleDataset", "Project17_KaggleDataset\Project17_KaggleDataset.csproj", "{3C2700BE-AAC4-47D5-B703-D8271EB86D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{6458EEBB-3BD9-4FF4-99A2-8BCC35AB8314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6458EEBB-3BD9-4FF4-99A2-8BCC35AB8314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6458EEBB-3BD9-4FF4-99A2-8BCC35AB8314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2700BE-AAC4-47D5-B703-D8271EB86D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2700BE-AAC4-47D5-B703-D8271EB86D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2700BE-AAC4-47D5-B703-D8271EB86D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2700BE-AAC4-47D5-B703-D8271EB86D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
