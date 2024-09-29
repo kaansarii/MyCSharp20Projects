@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project17_KaggleDataset", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project18_DashboardSuperStoreDataset", "Project18_DashboardSuperStoreDataset\Project18_DashboardSuperStoreDataset.csproj", "{93CD1145-F301-459E-9225-2236C653E67A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project19_TableStatusMomentary", "Project19_TableStatusMomentary\Project19_TableStatusMomentary.csproj", "{3E12E4A6-6D4F-4F65-AB76-56E763138CB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{93CD1145-F301-459E-9225-2236C653E67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93CD1145-F301-459E-9225-2236C653E67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93CD1145-F301-459E-9225-2236C653E67A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E12E4A6-6D4F-4F65-AB76-56E763138CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E12E4A6-6D4F-4F65-AB76-56E763138CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E12E4A6-6D4F-4F65-AB76-56E763138CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E12E4A6-6D4F-4F65-AB76-56E763138CB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
